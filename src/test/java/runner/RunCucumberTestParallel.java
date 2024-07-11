@@ -18,15 +18,7 @@ import org.testng.annotations.DataProvider;
     )
     public class RunCucumberTestParallel extends AbstractTestNGCucumberTests{
 
-//        @BeforeClass
-//        public static void initDriver() {
-//            SeleniumWebDriver.initChrome();
-//        }
-//
-//        @AfterClass
-//        public static void tearDown() {
-//            SeleniumWebDriver.closeDriver();
-//        }
+
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
